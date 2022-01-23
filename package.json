@@ -1,0 +1,31 @@
+{
+  "name": "full-stack-development-with-react",
+  "version": "1.0.0",
+  "description": "This repository contains the projects completed during the Coursera specialization \"Full-stack development with React\"",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ComputerMaestro/Full-stack-development-with-React.git"
+  },
+  "author": "Yash Patel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ComputerMaestro/Full-stack-development-with-React/issues"
+  },
+  "homepage": "https://github.com/ComputerMaestro/Full-stack-development-with-React#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
