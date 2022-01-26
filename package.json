@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "This repository contains the projects completed during the Coursera specialization \"Full-stack development with React\"",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -27,6 +28,17 @@
     "popper.js": "^1.12.9"
   },
   "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-flatmap": "^1.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-rev": "^9.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-usemin": "^0.3.30",
     "lite-server": "^2.6.1",
     "node-sass": "^7.0.1"
   }
