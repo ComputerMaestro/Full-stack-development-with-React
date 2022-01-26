@@ -49,3 +49,9 @@ $carousel-item-height: 300px;
     @include zero-margin(30px, 20px);
     background-color: $background-pale;
 }
+
+#carouselButton {
+    right: 0px;
+    position: absolute;
+    bottom: 0px;
+}

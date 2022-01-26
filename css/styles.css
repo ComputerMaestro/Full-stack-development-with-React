@@ -31,3 +31,8 @@
   margin: 0px;
   padding: 30px 20px;
   background-color: #89e0e0; }
+
+#carouselButton {
+  right: 0px;
+  position: absolute;
+  bottom: 0px; }
