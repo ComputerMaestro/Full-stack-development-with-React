@@ -5,6 +5,8 @@ $background-pale: #89e0e0;
 
 $carousel-item-height: 300px;
 
+$modal-text-color: #fffaf0;
+
 @mixin zero-margin($pad-up-dn: 0px, $pad-left-right: 0px) {
     margin: 0px;
     padding: $pad-up-dn $pad-left-right;
@@ -54,4 +56,17 @@ $carousel-item-height: 300px;
     right: 0px;
     position: absolute;
     bottom: 0px;
+}
+
+.modal-header {
+    background-color: $background-dark;
+    color: $modal-text-color;
+
+    .close {
+        color: $background-pale;
+    }
+}
+
+.modal-body {
+    background-color: $background-pale;
 }

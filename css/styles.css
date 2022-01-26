@@ -36,3 +36,12 @@
   right: 0px;
   position: absolute;
   bottom: 0px; }
+
+.modal-header {
+  background-color: #1b8585;
+  color: #fffaf0; }
+  .modal-header .close {
+    color: #89e0e0; }
+
+.modal-body {
+  background-color: #89e0e0; }

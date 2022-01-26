@@ -1,39 +1,47 @@
-.row-header{
-    margin:0px auto;
-    padding:0px;
-}
+.row-header {
+  margin: 0px;
+  padding: 20px 30px; }
 
 .row-content {
-    margin:0px auto;
-    padding: 50px 0px 50px 0px;
-    border-bottom: 1px ridge;
-    min-height:400px;
-}
+  margin: 0px;
+  padding: 50 0;
+  border-bottom: 1px ridge;
+  min-height: 400px; }
 
-.footer{
-    background-color: #D1C4E9;
-    margin:0px auto;
-    padding: 20px 0px 20px 0px;
-}
+.navbar {
+  background: #1b8585; }
 
 .jumbotron {
-    padding:70px 30px 70px 30px;
-    margin:0px auto;
-    background: #9575CD ;
-    color:floralwhite;
-}
+  margin: 0px;
+  padding: 70px 30px;
+  background: #50c7c7;
+  color: floralwhite; }
 
-address{
-    font-size:80%;
-    margin:0px;
-    color:#0f0f0f;
-}
+.carousel {
+  background: #1b8585; }
+  .carousel .carousel-item {
+    height: 300px; }
+    .carousel .carousel-item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-height: 300px; }
 
-body {
-    padding: 50px 0px 0px 0px;
-    z-index: 0;
-}
+.footer {
+  margin: 0px;
+  padding: 30px 20px;
+  background-color: #89e0e0; }
 
-.navbar-dark {
-    background-color: #512DA8;
-}
+#carouselButton {
+  right: 0px;
+  position: absolute;
+  bottom: 0px; }
+
+.modal-header {
+  background-color: #1b8585;
+  color: #fffaf0; }
+  .modal-header .close {
+    color: #89e0e0; }
+
+.modal-body {
+  background-color: #89e0e0; }

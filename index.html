@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <nav class='navbar navbar-dark navbar-expand-sm fixed-top'>
@@ -25,13 +25,44 @@
                     <li class="nav-item"><a href="./contactus.html" class="nav-link"><span class="fa fa-address"></span> Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a href="" data-toggle="modal" data-target="#loginModal">
+                    <a id="loginButton" style="cursor: pointer;">
                         <span class="fa fa-sign-in"></span> Login
                     </a>
                 </span>
             </div>
         </div>
     </nav>
+
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" data-dismiss="modal" class="close">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-row">
+                            <div class="col-4"><input type="email" class="form-control" placeholder="Enter Email"></div>
+                            <div class="col-4"><input type="password" class="form-control" placeholder="Password"></div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="rememberMeCheck">
+                                <label for="rememberMeCheck" class="form-check-label">Remember me</label>
+                            </div>
+                        </div>
+                        <div class="form-row justify-content-end">
+                            <div class="col-3 order-sm-last d-flex flex-row justify-content-around">
+                                <button type="button" class="btn btn-secondary">Cancel</button>
+                                <button type="submit" class="btn btn-primary">Sign in</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div id="reserveTableModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
@@ -119,7 +150,7 @@
                     <img src="img/logo.png" alt="LOGO" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
-                    <a href="" class="btn btn-block btn-warning px-5" data-toggle="modal" data-target="#reserveTableModal">Reserve Table</a>
+                    <a id="reserveTableButton" class="btn btn-block btn-warning px-5">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -245,6 +276,7 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
         $(document).ready(function(){
+            // Carousel Control
             $('#mycarousel').carousel({interval: 2000});
             $('#carouselButton').click(function(){
                 if ($('#carouselButton').children('span').hasClass('fa-pause')) {
@@ -256,6 +288,16 @@
                     $('#carouselButton').children('span').removeClass('fa-play');
                     $('#carouselButton').children('span').addClass('fa-pause');
                 }
+            });
+
+            // Table Reservation Modal Toggle
+            $('#reserveTableButton').click(function(){
+                $('#reserveTableModal').modal('toggle');
+            });
+
+            // Login Modal Toggle
+            $('#loginButton').click(function(){
+                $('#loginModal').modal('toggle');
             });
         });
     </script>
