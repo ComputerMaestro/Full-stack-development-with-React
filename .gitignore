@@ -1,1 +1,2 @@
-node_modules
+/Course\ 1\ Frontend\ with\ Bootstrap/node_modules/*
+/Course\ 2\ React/node_modules/*
